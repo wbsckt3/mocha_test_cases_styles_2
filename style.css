@@ -1,0 +1,88 @@
+body {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        #editor-container, #mocha-container, #app-container, #console-container {
+            width: 50%;
+            height: 50%;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        #editor-container {
+            display: flex;
+            flex-direction: column;
+        }
+        #code-editor {
+            flex: 1;
+        }
+        #app-container, #console-container {
+            display: flex;
+            flex-direction: column;
+        }
+        #app {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #console {
+            flex: 1;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+        #run-button {
+            margin-top: 10px;
+        }
+        #mocha {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            #editor-container, #mocha-container, #app-container, #console-container {
+                width: 100%;
+                height: auto;
+            }
+			#mocha .test a.replay {
+			  background: #1ddf32 !important;
+			  width: 81px;
+			}
+        }
+        #run-button {
+            margin-top: 0px;
+            background: #25c5ea;
+            padding: 12px;
+            font-size: 20px;
+            font-family: helvetica;
+            font-weight: bold;
+            color: white;
+        }
+        #app-container {
+            padding: 38px;
+            background: #ececee;
+        }
+		#mocha-stats {
+			font-size: 15px !important;
+		}
+        #mocha .test a.replay {
+            background: #1ddf32 !important;
+            width: 140px !important;
+            font-size: 20px !important;
+        }
+        #mocha-report {
+            margin-top: -44px !important;
+            margin-left: -20px !important;
+        }
+        #mocha .test h2 {
+            position: relative;
+            font-size: 17px !important;
+        }
+        /* Custom styles for the check mark */
+        .pass .checkmark {
+            font-size: 2em; /* Increase the size */
+            color: #00FF00; /* Bright green color */
+        }
