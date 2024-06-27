@@ -97,3 +97,6 @@
         .incorrect-answer {
             color: red;
         }
+	ul {
+	    margin-left: 38px;
+	}
