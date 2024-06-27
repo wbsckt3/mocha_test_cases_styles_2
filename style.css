@@ -26,6 +26,7 @@
             flex: 1;
             padding: 10px;
             box-sizing: border-box;
+	    margin-left: 7px;	
         }
         #console {
             flex: 1;
@@ -99,4 +100,7 @@
         }
 	ul {
 	    margin-left: 38px;
+	}
+	h3{
+	   margin-top: 40px;
 	}
