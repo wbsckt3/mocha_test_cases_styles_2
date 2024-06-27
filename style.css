@@ -1,4 +1,4 @@
-body {
+        body {
             display: flex;
             flex-wrap: wrap;
             height: 100vh;
@@ -90,3 +90,10 @@ body {
 	    font-family: helvetica;
             color: #0f0e17;
 	}
+	.correct-answer {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect-answer {
+            color: red;
+        }
