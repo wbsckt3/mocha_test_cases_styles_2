@@ -86,3 +86,7 @@ body {
             font-size: 2em; /* Increase the size */
             color: #00FF00; /* Bright green color */
         }
+	#app-container{
+	    font-family: helvetica;
+            color: #0f0e17;
+	}
