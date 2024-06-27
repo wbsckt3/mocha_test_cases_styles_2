@@ -91,6 +91,9 @@
 	    font-family: helvetica;
             color: #0f0e17;
 	}
+        .black {
+            color: black;
+        }
 	.correct {
             color: green;
             font-weight: bold;
@@ -104,9 +107,6 @@
 	h3{
 	   margin-top: 40px;
 	}
-        ul li {
-            color: #111;
-        }
         #modify-message{
 	    margin-top:23px;
             font-weight: bold;
