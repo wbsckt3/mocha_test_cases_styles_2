@@ -107,3 +107,7 @@
         ul li {
             color: #111;
         }
+        #modify-message{
+	    margin-top:23px;
+            font-weight: bold;
+	}
