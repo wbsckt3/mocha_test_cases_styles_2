@@ -109,13 +109,15 @@
 	   margin-top: 40px;
 	}
         #modify-message{
-	    margin-top:23px;
-	    display: block;
-	  background: #37364a;
-	  z-index: 0;
-	  color: #fff;
-	  padding: 15px;
-	  border-radius: 8px;
+	   margin-top:23px;
+	   display: block;
+	   background: #37364a;
+	   z-index: 0;
+	   color: #fff;
+	   padding: 15px;
+	   border-radius: 8px;
+	   color: #26e316;
+  	   font-weight: bold;
 	}
 	h4{
 	  margin-bottom: -13px !important;
