@@ -91,11 +91,11 @@
 	    font-family: helvetica;
             color: #0f0e17;
 	}
-	.correct-answer {
+	.correct {
             color: green;
             font-weight: bold;
         }
-        .incorrect-answer {
+        .incorrect {
             color: red;
         }
 	ul {
