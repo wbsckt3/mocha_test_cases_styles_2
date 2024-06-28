@@ -27,7 +27,8 @@
             flex: 1;
             padding: 10px;
             box-sizing: border-box;
-	    margin-left: 7px;	
+	    margin-left: 7px;
+	    margin-top: 31px;
         }
         #console {
             flex: 1;
@@ -109,7 +110,7 @@
 	   margin-top: 40px;
 	}
         #modify-message{
-	   margin-top:16px;
+	   margin-top:30px;
 	   display: block;
 	   background: #37364a;
 	   z-index: 0;
