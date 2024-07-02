@@ -135,32 +135,13 @@
             background-color: #f0f0f0;
             border: 1px solid #ccc;
 	    margin-top:20px;
-	    padding: 15px;
+	    padding: 10px;
 	    border-radius: 8px;
         }
 
         #send-response-button {
             cursor: not-allowed;
         }
-
-	/* Estilos personalizados */
-	.active-message {
-	    margin-top: 20px;
-	    display: block;
-	    z-index: 0;
-	    color: #fff;
-	    padding: 15px;
-	    border-radius: 8px;
-	}
-	
-	.active-button {
-	    background: green;
-	    align-content: right;
-	    border-radius: 5px;
-	    padding: 7px;
-	    color: #ffffff;
-	    margin-top: 15px;
-	}
 
 .CodeMirror {
     white-space: pre-wrap; /* Permite que las líneas se envuelvan */
