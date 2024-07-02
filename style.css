@@ -108,7 +108,7 @@
 	h3{
 	   margin-top: 40px;
 	}
-        #modify-message{
+       /*#modify-message{
 	   margin-top:20px;
 	   display: block;
 	   background: #37364a;
@@ -116,20 +116,20 @@
 	   color: #fff;
 	   padding: 15px;
 	   border-radius: 8px;
-	}
+	} */
 	h4{
 	  margin-bottom: -13px !important;
 	}
-	#send-response-button{
+	/*#send-response-button{
 	  background: green;
 	  align-content: right;
 	  border-radius: 5px;
 	  padding: 7px;
 	  color: #ffffff;
 	  margin-top: 15px	
-	}
+	} */
 
-#modify-message,
+        #modify-message,
         #send-response-button {
             color: #ccc;
             background-color: #f0f0f0;
@@ -140,9 +140,22 @@
             cursor: not-allowed;
         }
 
-        .active {
-            color: #000;
-            background-color: #fff;
-            border: 1px solid #000;
-            cursor: pointer;
-        }
+	/* Estilos personalizados */
+	.active-message {
+	    margin-top: 20px;
+	    display: block;
+	    background: #37364a;
+	    z-index: 0;
+	    color: #fff;
+	    padding: 15px;
+	    border-radius: 8px;
+	}
+	
+	.active-button {
+	    background: green;
+	    align-content: right;
+	    border-radius: 5px;
+	    padding: 7px;
+	    color: #ffffff;
+	    margin-top: 15px;
+	}
