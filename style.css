@@ -131,7 +131,7 @@
 
         #modify-message,
         #send-response-button {
-            color: #ccc;
+            color: #000000;
             background-color: #f0f0f0;
             border: 1px solid #ccc;
 	    margin-top:20px;
@@ -147,7 +147,6 @@
 	.active-message {
 	    margin-top: 20px;
 	    display: block;
-	    background: #37364a;
 	    z-index: 0;
 	    color: #fff;
 	    padding: 15px;
