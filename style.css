@@ -132,13 +132,21 @@
 	  margin-top: 15px	
 	} */
 
-        #modify-message,
+        #modify-message {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+	    margin-top:20px;
+	    padding: 10px;
+	    border-radius: 8px;
+        }
+
         #send-response-button {
             background-color: #f0f0f0;
             border: 1px solid #ccc;
 	    margin-top:20px;
 	    padding: 10px;
 	    border-radius: 8px;
+	    color: #ccc;	
         }
 
         #send-response-button {
