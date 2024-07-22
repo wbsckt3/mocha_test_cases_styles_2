@@ -147,11 +147,16 @@
 	    padding: 10px;
 	    border-radius: 8px;
 	    color: #ccc;	
+	    cursor: not-allowed; /* Mostrar el cursor de "no permitido" */
+            pointer-events: none; /* Deshabilitar clics */
         }
 
-        #send-response-button {
-            cursor: not-allowed;
-        }
+        #send-response-button.enabled {
+	    background-color: green;
+	    color: white;
+	    cursor: pointer; /* Mostrar el cursor de puntero */
+	    pointer-events: auto; /* Habilitar clics */
+	}
 
 .CodeMirror {
     white-space: pre-wrap; /* Permite que las líneas se envuelvan */
