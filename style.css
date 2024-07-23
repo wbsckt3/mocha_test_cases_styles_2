@@ -27,7 +27,7 @@
             flex: 1;
             padding: 10px;
             box-sizing: border-box;
-	    margin-left: 7px;		
+	    margin-left:  -15px;		
         }
         #console {
             flex: 1;
@@ -72,16 +72,16 @@
 		}
         #mocha .test a.replay {
             background: #1ddf32 !important;
-            width: 140px !important;
+            width: 34px !important;
             font-size: 20px !important;
         }
         #mocha-report {
-            margin-top: -77px !important;
+            margin-top: -69px !important;
   	    margin-left: -62px !important;
         }
         #mocha .test h2 {
             position: relative;
-            font-size: 17px !important;
+            font-size: 15px !important;
         }
         /* Custom styles for the check mark */
         .pass .checkmark {
