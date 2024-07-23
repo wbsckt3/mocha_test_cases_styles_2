@@ -147,7 +147,7 @@
 	    margin-top:20px;
 	    padding: 10px;
 	    border-radius: 8px;
-	    color: #ccc;
+	    color: #ffffff;
 	    pointer-events: none; /* Deshabilitado por defecto */
 	    cursor: not-allowed; /* Mostrar el cursor de "no permitido" */
         }
