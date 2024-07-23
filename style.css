@@ -147,7 +147,7 @@
 	    margin-top:20px;
 	    padding: 10px;
 	    border-radius: 8px;
-	    color: #ffffff;
+	    color: #ccc;
 	    pointer-events: none; /* Deshabilitado por defecto */
 	    cursor: not-allowed; /* Mostrar el cursor de "no permitido" */
         }
@@ -156,6 +156,7 @@
 	  background: green;
 	  cursor: pointer;
 	  pointer-events: auto; /* Habilitado cuando tiene la clase 'enabled' */
+	  color: #ffffff;
 	}
 
 .CodeMirror {
