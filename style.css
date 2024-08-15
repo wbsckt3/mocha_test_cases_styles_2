@@ -21,9 +21,10 @@
 	    overflow-y: auto; /* Asegura que los contenedores puedan hacer scroll si el contenido es grande */
 
 	}
-        #editor-container {
+        #editor-container, #console-container {
             display: flex;
             flex-direction: column;
+            border-right: 9px solid #a1a1a8
         }
         #code-editor {
             flex: 1;
