@@ -5,6 +5,11 @@
             margin: 0;
             padding: 0;
         }
+
+        #mocha-container{
+	    padding: 38px;
+  	    background: #ececee;
+	}
         #editor-container, #mocha-container, #app-container, #console-container {
             width: 50%;
             height: 50%;
