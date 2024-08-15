@@ -10,7 +10,7 @@
 	    padding: 38px;
 	    background: #ececee;
 	    overflow-y: auto; /* Habilita el scroll vertical */
-	    max-height: 100%; /* Asegura que el contenedor no se expanda más allá de su altura asignada */
+	    max-height: 100%; 
 	}*/
 
         #editor-container {
