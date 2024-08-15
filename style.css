@@ -6,16 +6,20 @@
             padding: 0;
         }
 
-        #mocha-container{
+      #mocha-container {
 	    padding: 38px;
-  	    background: #ececee;
+	    background: #ececee;
+	    overflow-y: auto; /* Habilita el scroll vertical */
+	    max-height: 100%; /* Asegura que el contenedor no se expanda más allá de su altura asignada */
 	}
-        #editor-container, #mocha-container, #app-container, #console-container {
-            width: 50%;
-            height: 50%;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
+	
+	#editor-container, #mocha-container, #app-container, #console-container {
+	    width: 50%;
+	    height: 50%;
+	    border: 1px solid #ccc;
+	    box-sizing: border-box;
+	    overflow-y: auto; /* Asegura que los contenedores puedan hacer scroll si el contenido es grande */
+	}
         #editor-container {
             display: flex;
             flex-direction: column;
