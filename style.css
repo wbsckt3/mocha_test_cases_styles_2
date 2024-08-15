@@ -6,12 +6,12 @@
             padding: 0;
         }
 
-     /*#mocha-container {
+     #mocha-container {
 	    padding: 38px;
 	    background: #ececee;
 	    overflow-y: auto; 
 	    max-height: 100%; 
-	}*/
+	}
 
         #editor-container {
 	    width: 50%;
