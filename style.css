@@ -14,7 +14,7 @@
 
 	#editor-container, #console-container, #mocha-container, #app-container {
 	    width: 50%;
-		height: 40%;
+		height: 50%;
 	    border: 1px solid #ccc;
 	    box-sizing: border-box;
 	    overflow-y: auto; /* Asegura que los contenedores puedan hacer scroll si el contenido es grande */
