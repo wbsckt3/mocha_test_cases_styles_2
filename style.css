@@ -41,7 +41,7 @@
         #console {
             flex: 1;
             padding: 10px;
-            background-color: black;
+            background-color: #313235;
             color: white;
             overflow-y: auto;
             box-sizing: border-box;
