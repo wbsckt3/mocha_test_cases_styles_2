@@ -50,6 +50,7 @@
             color: white;
             overflow-y: auto;
             box-sizing: border-box;
+	    border-right: 9px solid #a1a1a8
         }
         #run-button {
             margin-top: 10px;
