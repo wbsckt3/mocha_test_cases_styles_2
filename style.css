@@ -162,6 +162,7 @@
 .CodeMirror {
     white-space: pre-wrap; /* Permite que las líneas se envuelvan */
     overflow-x: hidden;    /* Oculta cualquier desbordamiento horizontal */
+    background: #f8f9fa;
 }
 
 /* Opcional: Ajusta el ancho del editor */
