@@ -7,19 +7,15 @@
         }
 
      #mocha-container {
-	    padding: 38px;
+	    padding: 20px;
 	    background: #ececee;
 	    overflow-y: auto; 
 	    max-height: 100%; 
 	}
-        #editor-container, #app-container{
-		height: 60%;
-	}
-#console-container, #mocha-container{
-	height: 40%;
-}
+
 	#editor-container, #console-container, #mocha-container, #app-container {
 	    width: 50%;
+		height: 40%;
 	    border: 1px solid #ccc;
 	    box-sizing: border-box;
 	    overflow-y: auto; /* Asegura que los contenedores puedan hacer scroll si el contenido es grande */
