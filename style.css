@@ -32,6 +32,8 @@
             display: flex;
             flex-direction: column;
             border: none !important;
+        }
+        #console-container {
 	    border-right: 9px solid #a1a1a8
         }
         #app {
