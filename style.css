@@ -163,6 +163,7 @@
     white-space: pre-wrap; /* Permite que las líneas se envuelvan */
     overflow-x: hidden;    /* Oculta cualquier desbordamiento horizontal */
     background: #f8f9fa;
+    color: #4f4755
 }
 
 /* Opcional: Ajusta el ancho del editor */
