@@ -1,95 +1,198 @@
-/* Contenedor principal que agrupa editor y la sección derecha */
-#main-container {
-    display: flex;
-    height: 100vh; /* Ocupa el 100% del alto de la ventana */
-    margin: 0;
-    padding: 0;
-}
+      body {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Lado izquierdo: Editor de código */
-#editor-container {
-    width: 40%; /* Ocupa el 40% del ancho total */
-    height: 100%; /* Ocupa el 100% del alto */
-    display: flex;
-    flex-direction: column;
-    border-right: 9px solid #a1a1a8;
-    box-sizing: border-box;
-}
+     #mocha-container {
+	    background: #ececee;
+	    overflow-y: auto; 
+	    max-height: 100%; 
+	}
 
-/* Contenedor derecho que agrupa los tres divs */
-#right-container {
-    width: 60%; /* Ocupa el 60% restante del ancho */
-    height: 100%; /* También ocupa el 100% del alto */
-    display: flex;
-    flex-direction: column; /* Apila los elementos en columna */
-    box-sizing: border-box;
-}
+	#editor-container, #console-container, #mocha-container, #app-container {
+	    width: 50%;
+		height: 50%;
+	    border: 1px solid #ccc;
+	    box-sizing: border-box;
+	    overflow-y: auto; /* Asegura que los contenedores puedan hacer scroll si el contenido es grande */
 
-/* Los contenedores de app, consola y mocha ocupan 1/3 del alto cada uno */
-#app-container, #console-container, #mocha-container {
-    flex: 1; /* Cada uno ocupa el mismo espacio vertical */
-    overflow-y: auto;
-    border-bottom: 1px solid #ccc; /* Líneas divisorias */
-}
+	}
+        #editor-container, #console-container {
+            display: flex;
+            flex-direction: column;
+            border-right: 9px solid #a1a1a8
+        }
+        #code-editor {
+            flex: 1;
+        }
+        #app-container, #console-container {
+            display: flex;
+            flex-direction: column;
+            border: none !important;
+        }
+        #console-container {
+	    border-right: 9px solid #a1a1a8
+        }
+        #app {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+	    margin-left:  -15px;		
+        }
+        #console {
+            flex: 1;
+            padding: 10px;
+            background-color: #313235;
+            color: white;
+            overflow-y: auto;
+            box-sizing: border-box;
+	    border-right: 9px solid #a1a1a8
+        }
+        #run-button {
+            margin-top: 10px;
+        }
+        #mocha {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            #editor-container, #mocha-container, #app-container, #console-container {
+                width: 100%;
+                height: auto;
+            }
+			#mocha .test a.replay {
+			  background: #1ddf32 !important;
+			  width: 81px;
+			}
+        }
+        #run-button {
+            margin-top: 0px;
+            background: #25c5ea;
+            padding: 8px;
+            font-size: 16px;
+            font-family: helvetica;
+            font-weight: bold;
+            color: white;
+        }
+        #app-container {
+            padding: 38px;
+            background: #ececee;
+	    color: #212529
+        }
+		#mocha-stats {
+			font-size: 15px !important;
+		}
+        #mocha .test a.replay {
+            background: #1ddf32 !important;
+            width: 34px !important;
+            font-size: 20px !important;
+        }
+        #mocha-report {
+            margin-top: -69px !important;
+  	    margin-left: -62px !important;
+        }
+        #mocha .test h2 {
+            position: relative;
+            font-size: 15px !important;
+        }
+        /* Custom styles for the check mark */
+        .pass .checkmark {
+            font-size: 2em; /* Increase the size */
+            color: #00FF00; /* Bright green color */
+        }
+	#app-container{
+            color: #0f0e17;
+	}
+        .black {
+            color: black;
+        }
+	.correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+        }
+	ul {
+	    margin-left: 38px;
+	}
+	h3{
+	   margin-top: 40px;
+	}
+       /*#modify-message{
+	   margin-top:20px;
+	   display: block;
+	   background: #37364a;
+	   z-index: 0;
+	   color: #fff;
+	   padding: 15px;
+	   border-radius: 8px;
+	} */
+	h4{
+	  margin-bottom: -13px !important;
+	}
+        h5{
+	  font-weight: bold !important;
+	}
+	/*#send-response-button{
+	  background: green;
+	  align-content: right;
+	  border-radius: 5px;
+	  padding: 7px;
+	  color: #ffffff;
+	  margin-top: 15px	
+	} */
 
-/* El último contenedor no necesita borde inferior */
-#mocha-container {
-    border-bottom: none;
-}
+        #modify-message {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+	    margin-top:20px;
+	    padding: 10px;
+	    border-radius: 8px;
+        }
 
-/* Estilo específico para la consola */
-#console-container {
-    padding: 10px;
-    background-color: #313235;
-    color: white;
-}
+        #send-response-button {
+	    display: inline-block;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+	    margin-top:20px;
+	    padding: 10px;
+	    border-radius: 8px;
+	    color: #ccc;
+	    pointer-events: none; /* Deshabilitado por defecto */
+	    cursor: not-allowed; /* Mostrar el cursor de "no permitido" */
+        }
 
-/* Estilos adicionales */
-#code-editor {
-    flex: 1;
-    padding: 10px;
-}
-
-#run-button {
-    margin-top: 10px;
-}
-
-#app-container {
-    padding: 38px;
-    background: #ececee;
-    color: #212529;
-}
-
-/* Mocha */
-#mocha {
-    padding: 10px;
-    background-color: #ececee;
-}
-
-/* Para pantallas pequeñas */
-@media (max-width: 768px) {
-    #editor-container, #right-container {
-        width: 100%;
-        height: auto;
-    }
-}
+        #send-response-button.enabled {
+	  background: green;
+	  cursor: pointer;
+	  pointer-events: auto; /* Habilitado cuando tiene la clase 'enabled' */
+	  color: #ffffff;
+	}
 
 .CodeMirror {
-    white-space: pre-wrap;
-    overflow-x: hidden;
+    white-space: pre-wrap; /* Permite que las líneas se envuelvan */
+    overflow-x: hidden;    /* Oculta cualquier desbordamiento horizontal */
     background: #f8f9fa;
     color: #4f4755;
-    font-weight: bold;
+    font-weight: bold
 }
 
+/* Opcional: Ajusta el ancho del editor */
 .CodeMirror-scroll {
-    overflow-x: hidden;
+    overflow-x: hidden;    /* Oculta el scroll horizontal */
 }
 
-#logo {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 131px;
-    height: 27px;
-}
+#editor-container {
+            position: relative;
+        }
+        #logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 131px;
+            height: 27px;
+        }
