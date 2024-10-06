@@ -1,11 +1,7 @@
   
-
-
-
 /* Mantén el contenedor principal en modo flex para organizar en columnas */
 body {
     display: flex;
-    flex-direction: row; /* Coloca los elementos en una fila */
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -21,44 +17,45 @@ body {
     box-sizing: border-box;
 }
 
-/* El contenedor derecho con los otros 3 divs apilados verticalmente */
+/* Contenedor derecho con los tres divs apilados en columna */
 #right-container {
     width: 50%; /* Ocupa la otra mitad del ancho */
     height: 100vh; /* Ocupa todo el alto */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Apila los elementos verticalmente */
     box-sizing: border-box;
 }
 
-/* Ajusta el contenedor del app para que se vea correctamente */
+/* Ajusta cada contenedor para que ocupe un tercio del alto del contenedor derecho */
+#app-container, #console-container, #mocha-container {
+    flex: 1; /* Cada uno ocupa un espacio igual dentro del contenedor */
+    overflow-y: auto; /* Habilita scroll si es necesario */
+    border-bottom: 1px solid #ccc; /* Opcional: línea divisoria entre secciones */
+}
+
+/* Último contenedor no necesita borde inferior */
+#mocha-container {
+    border-bottom: none;
+}
+
+/* Estilos adicionales para app-container */
 #app-container {
-    flex: 1; /* Ocupa una parte igual del espacio vertical */
     padding: 38px;
     background: #ececee;
     color: #212529;
-    overflow-y: auto;
-    border-bottom: 1px solid #ccc;
 }
 
 /* Estilos para la consola */
 #console-container {
-    flex: 1;
     padding: 10px;
     background-color: #313235;
     color: white;
-    overflow-y: auto;
-    box-sizing: border-box;
-    border-bottom: 1px solid #ccc;
 }
 
-/* El contenedor de Mocha con scroll vertical */
+/* Mocha */
 #mocha-container {
-    flex: 1;
     background: #ececee;
     padding: 10px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
 /* Mantén los estilos del editor de código */
@@ -72,15 +69,7 @@ body {
     margin-top: 10px;
 }
 
-/* Resto de los estilos que ya tienes */
-#app {
-    flex: 1;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-left: -15px;
-}
-
-/* Para los media queries en pantallas pequeñas */
+/* Para pantallas pequeñas */
 @media (max-width: 768px) {
     #editor-container, #right-container {
         width: 100%;
@@ -107,4 +96,5 @@ body {
     width: 131px;
     height: 27px;
 }
+
 
