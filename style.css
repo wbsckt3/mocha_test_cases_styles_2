@@ -1,14 +1,15 @@
 /* Contenedor principal que agrupa editor y la sección derecha */
 #main-container {
     display: flex;
-    height: 100vh;
+    height: 100vh; /* Ocupa el 100% del alto de la ventana */
     margin: 0;
     padding: 0;
 }
 
 /* Lado izquierdo: Editor de código */
 #editor-container {
-    width: 50%; /* Ocupa el 50% del ancho */
+    width: 40%; /* Ocupa el 40% del ancho total */
+    height: 100%; /* Ocupa el 100% del alto */
     display: flex;
     flex-direction: column;
     border-right: 9px solid #a1a1a8;
@@ -17,7 +18,8 @@
 
 /* Contenedor derecho que agrupa los tres divs */
 #right-container {
-    width: 50%; /* Ocupa el otro 50% del ancho */
+    width: 60%; /* Ocupa el 60% restante del ancho */
+    height: 100%; /* También ocupa el 100% del alto */
     display: flex;
     flex-direction: column; /* Apila los elementos en columna */
     box-sizing: border-box;
@@ -91,5 +93,3 @@
     width: 131px;
     height: 27px;
 }
-
-
