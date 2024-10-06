@@ -1,71 +1,67 @@
-/* Mantén el contenedor principal en modo flex para organizar en columnas */
-body {
+/* Contenedor principal que agrupa editor y la sección derecha */
+#main-container {
     display: flex;
     height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-/* Editor a la izquierda, ocupa el 50% del ancho */
+/* Lado izquierdo: Editor de código */
 #editor-container {
-    width: 50%; /* Ocupa la mitad del ancho */
-    height: 100vh; /* Ocupa todo el alto de la pantalla */
+    width: 50%; /* Ocupa el 50% del ancho */
     display: flex;
     flex-direction: column;
     border-right: 9px solid #a1a1a8;
     box-sizing: border-box;
 }
 
-/* Contenedor derecho con los tres divs apilados en columna */
+/* Contenedor derecho que agrupa los tres divs */
 #right-container {
-    width: 50%; /* Ocupa la otra mitad del ancho */
-    height: 100vh; /* Ocupa todo el alto */
+    width: 50%; /* Ocupa el otro 50% del ancho */
     display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
+    flex-direction: column; /* Apila los elementos en columna */
     box-sizing: border-box;
 }
 
-/* Ajusta cada contenedor para que ocupe un tercio del alto del contenedor derecho */
+/* Los contenedores de app, consola y mocha ocupan 1/3 del alto cada uno */
 #app-container, #console-container, #mocha-container {
-    flex: 1; /* Cada uno ocupa un espacio igual dentro del contenedor */
-    overflow-y: auto; /* Habilita scroll si es necesario */
-    border-bottom: 1px solid #ccc; /* Opcional: línea divisoria entre secciones */
+    flex: 1; /* Cada uno ocupa el mismo espacio vertical */
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc; /* Líneas divisorias */
 }
 
-/* Último contenedor no necesita borde inferior */
+/* El último contenedor no necesita borde inferior */
 #mocha-container {
     border-bottom: none;
 }
 
-/* Estilos adicionales para app-container */
-#app-container {
-    padding: 38px;
-    background: #ececee;
-    color: #212529;
-}
-
-/* Estilos para la consola */
+/* Estilo específico para la consola */
 #console-container {
     padding: 10px;
     background-color: #313235;
     color: white;
 }
 
-/* Mocha */
-#mocha-container {
-    background: #ececee;
-    padding: 10px;
-}
-
-/* Mantén los estilos del editor de código */
+/* Estilos adicionales */
 #code-editor {
     flex: 1;
     padding: 10px;
 }
 
-/* El botón de correr el código */
 #run-button {
     margin-top: 10px;
+}
+
+#app-container {
+    padding: 38px;
+    background: #ececee;
+    color: #212529;
+}
+
+/* Mocha */
+#mocha {
+    padding: 10px;
+    background-color: #ececee;
 }
 
 /* Para pantallas pequeñas */
@@ -95,4 +91,5 @@ body {
     width: 131px;
     height: 27px;
 }
+
 
