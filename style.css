@@ -1,4 +1,3 @@
-  
 /* Mantén el contenedor principal en modo flex para organizar en columnas */
 body {
     display: flex;
@@ -96,5 +95,4 @@ body {
     width: 131px;
     height: 27px;
 }
-
 
