@@ -25,7 +25,6 @@
 	    border: 1px solid #ccc;
 	    box-sizing: border-box;
 	    overflow-y: auto; /* Asegura que los contenedores puedan hacer scroll si el contenido es grande */
-
 	}
         #editor-container, #console-container {
             display: flex;
