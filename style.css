@@ -186,6 +186,12 @@
 	  pointer-events: auto; /* Habilitado cuando tiene la clase 'enabled' */
 	  color: #ffffff;
 	}
+	#runButton.disabled {
+  	  background: grey;
+  	  cursor: not-allowed; /* Cursor de deshabilitado */
+  	  pointer-events: none; /* Deshabilitado, no responde a clics */
+  	  color: #cccccc; /* Color más tenue */
+        }
 
 .CodeMirror {
     white-space: pre-wrap; /* Permite que las líneas se envuelvan */
