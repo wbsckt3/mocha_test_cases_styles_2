@@ -58,7 +58,7 @@
 	    border-right: 9px solid #a1a1a8
         }
         #run-button {
-            margin-top: 10px;
+            margin-top: 10%;
         }
         #mocha {
             padding: 10px;
@@ -184,8 +184,8 @@
     overflow-x: hidden;    /* Oculta cualquier desbordamiento horizontal */
     background: #f8f9fa;
     color: #4f4755;
-    font-weight: bold
-	height:100% !important
+    font-weight: bold;
+    height:100% !important
 }
 
 /* Opcional: Ajusta el ancho del editor */
