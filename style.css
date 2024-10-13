@@ -61,6 +61,13 @@
         #run-button {
             margin-top: 10%;
         }
+	#ai-assistance{
+  	   background: #7bae47;
+  	   color: #fff;
+           font-size: 15px;
+           padding: 6px;
+           border-radius: 11px;
+        }
         #mocha {
             padding: 10px;
             box-sizing: border-box;
