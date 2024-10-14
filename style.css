@@ -186,7 +186,7 @@
 	  pointer-events: auto; /* Habilitado cuando tiene la clase 'enabled' */
 	  color: #ffffff;
 	}
-	#ai-assistance.disabled {
+	#send-response-button.disabled {
   	  background: grey;
   	  cursor: not-allowed; /* Cursor de deshabilitado */
   	  pointer-events: none; /* Deshabilitado, no responde a clics */
