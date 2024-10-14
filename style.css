@@ -186,7 +186,7 @@
 	  pointer-events: auto; /* Habilitado cuando tiene la clase 'enabled' */
 	  color: #ffffff;
 	}
-	#runButton.disabled {
+	#ai-assistance.disabled {
   	  background: grey;
   	  cursor: not-allowed; /* Cursor de deshabilitado */
   	  pointer-events: none; /* Deshabilitado, no responde a clics */
