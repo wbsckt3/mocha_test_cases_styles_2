@@ -52,7 +52,7 @@
         #console {
             flex: 1;
             padding: 10px;
-            background-color: #313235;
+            background-color: #000000;
             color: white;
             overflow-y: auto;
             box-sizing: border-box;
