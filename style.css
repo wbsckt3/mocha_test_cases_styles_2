@@ -7,7 +7,7 @@
         }
 
      #mocha-container {
-	    background: #fbf7bb;
+	   /* background: #fbf7bb; */
 	    overflow-y: auto; 
 	    max-height: 100%; 
 	}
