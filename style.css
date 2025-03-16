@@ -239,10 +239,10 @@
 }
 
 /* Ajusta los colores de sintaxis si es necesario */
-.cm-s-seti .cm-keyword { color: #ff6188 !important; } /* Palabras clave */
-.cm-s-seti .cm-string { color: #a9dc76 !important; } /* Strings */
-.cm-s-seti .cm-variable { color: #78dce8 !important; } /* Variables */
-.cm-s-seti .cm-comment { color: #727072 !important; font-style: italic; } /* Comentarios */
-.cm-s-seti .cm-number { color: #fc9867 !important; } /* Números */
+.cm-s-seti .cm-keyword { color: #ff6188; } /* Palabras clave */
+.cm-s-seti .cm-string { color: #a9dc76; } /* Strings */
+.cm-s-seti .cm-variable { color: #78dce8; } /* Variables */
+.cm-s-seti .cm-comment { color: #727072; font-style: italic; } /* Comentarios */
+.cm-s-seti .cm-number { color: #fc9867; } /* Números */
 
 
