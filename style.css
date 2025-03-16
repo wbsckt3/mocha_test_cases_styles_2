@@ -234,8 +234,17 @@
   border-radius: 15px;
 }
 
-.cm-s-seti, .CodeMirror {
-    font-size: 20px; /* Ajusta el tamaño según lo necesites */
+.cm-s-seti .CodeMirror {
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
+    font-family: "Fira Code", "Consolas", monospace; /* Fuente personalizada */
+    line-height: 1.5; /* Espaciado entre líneas */
 }
+
+/* Ajusta los colores de sintaxis si es necesario */
+.cm-s-seti .cm-keyword { color: #ff6188; } /* Palabras clave */
+.cm-s-seti .cm-string { color: #a9dc76; } /* Strings */
+.cm-s-seti .cm-variable { color: #78dce8; } /* Variables */
+.cm-s-seti .cm-comment { color: #727072; font-style: italic; } /* Comentarios */
+.cm-s-seti .cm-number { color: #fc9867; } /* Números */
 
 
