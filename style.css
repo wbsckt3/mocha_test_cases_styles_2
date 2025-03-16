@@ -233,7 +233,7 @@
 }
 
 .cm-s-seti .CodeMirror {
-    font-size: 20px; /* Aumenta el tamaño de la fuente */
+    font-size: 21px; /* Aumenta el tamaño de la fuente */
     font-family: "Fira Code", "Consolas", monospace; /* Fuente personalizada */
     line-height: 1.5; /* Espaciado entre líneas */
 }
