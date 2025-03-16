@@ -205,14 +205,12 @@
   	  color: #cccccc; /* Color más tenue */
         }
 
-.CodeMirror {
-    white-space: pre-wrap; /* Permite que las líneas se envuelvan */
-    overflow-x: hidden;    /* Oculta cualquier desbordamiento horizontal */
+ .CodeMirror {
+    white-space: pre-wrap;
+    overflow-x: hidden;   
     background: #f8f9fa;
-    color: #4f4755;
-    font-weight: bold;
     height:100% !important
-}
+} 
 
 /* Opcional: Ajusta el ancho del editor */
 .CodeMirror-scroll {
