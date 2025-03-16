@@ -236,4 +236,8 @@
   border-radius: 15px;
 }
 
+.cm-s-seti, .CodeMirror {
+    font-size: 18px; /* Ajusta el tamaño según lo necesites */
+}
+
 
