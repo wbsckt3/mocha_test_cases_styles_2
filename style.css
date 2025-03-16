@@ -71,9 +71,7 @@
             box-sizing: border-box;
 	    border-right: 9px solid #a1a1a8
         }
-        #run-button {
-            margin-top: 10%;
-        }
+ 
 	#ai-assistance{
   	   background: #7bae47;
   	   color: #fff;
@@ -96,13 +94,13 @@
 			}
         }
         #run-button {
-            margin-top: 0px;
-            background: #25c5ea;
             padding: 8px;
             font-size: 16px;
             font-family: helvetica;
             font-weight: bold;
             color: white;
+	    margin-top: 10%;
+	    background: #007bff;
         }
         #app-container {
             padding: 25px;
