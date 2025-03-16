@@ -51,16 +51,15 @@
         }
 
 #app-footer {
-    height: 20px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    font-size: 12px;
-    line-height: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-	 margin-top: auto; /* Empuja el footer al final del contenedor */
+  height: 20px;
+  color: #007bff;
+  font-size: 12px;
+  line-height: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 18px;
+  font-weight: bold;
 }
         #console {
             flex: 1;
