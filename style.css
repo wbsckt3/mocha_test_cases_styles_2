@@ -179,30 +179,6 @@
 	    border-radius: 8px;
         }
 
-        #send-response-button {
-	    display: inline-block;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-	    padding: 10px;
-	    border-radius: 8px;
-	    color: #ccc;
-	    pointer-events: none; /* Deshabilitado por defecto */
-	    cursor: not-allowed; /* Mostrar el cursor de "no permitido" */
-        }
-
-        #send-response-button.enabled {
-	  background: green;
-	  cursor: pointer;
-	  pointer-events: auto; /* Habilitado cuando tiene la clase 'enabled' */
-	  color: #ffffff;
-	}
-	#send-response-button.disabled {
-  	  background: grey;
-  	  cursor: not-allowed; /* Cursor de deshabilitado */
-  	  pointer-events: none; /* Deshabilitado, no responde a clics */
-  	  color: #cccccc; /* Color más tenue */
-        }
-
  .CodeMirror {
     white-space: pre-wrap;
     overflow-x: hidden;   
