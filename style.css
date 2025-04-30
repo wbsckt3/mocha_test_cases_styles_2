@@ -10,20 +10,18 @@
 	   /* background: #fbf7bb; */
 	    overflow-y: auto; 
 	    max-height: 100%;
-	    background: #ececee;
+	    background: #000000;
 	}
 
 	#editor-container, #app-container {
 	    width: 50%;
 	    height: 70%;
-	    border: 1px solid #ccc;
 	    box-sizing: border-box;
 	    overflow-y: auto; /* Asegura que los contenedores puedan hacer scroll si el contenido es grande */
 	}
 	#console-container, #mocha-container{
 	    width: 50%;
 	    height: 30%;
-	    border: 1px solid #ccc;
 	    box-sizing: border-box;
 	    overflow-y: auto; /* Asegura que los contenedores puedan hacer scroll si el contenido es grande */
 	}
