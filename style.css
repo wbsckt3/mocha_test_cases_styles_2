@@ -1,10 +1,39 @@
-      body {
+      /*body {
             display: flex;
             flex-wrap: wrap;
             height: 100vh;
             margin: 0;
             padding: 0;
-        }
+        } */
+
+	/* Ajustar el layout del body */
+	body {
+	    flex-direction: column; /* Cambia de flex-wrap: wrap */
+	    height: 100vh;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	/* Cambios para el header */
+	header {
+	    width: 100%;
+	    background: #007bff;
+	    color: white;
+	    padding: 15px 25px;
+	    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	}
+	
+	header h1 {
+	    margin: 0;
+	    font-size: 1.8em;
+	}
+
+	/* Añadir contenedor principal */
+	#main-container {
+	    display: flex;
+	    flex: 1;
+	    width: 100%;
+	}
 
      #mocha-container {
 	   /* background: #fbf7bb; */
