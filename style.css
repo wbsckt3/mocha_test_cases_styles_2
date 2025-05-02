@@ -7,18 +7,16 @@
         }
 
 	/* Cambios para el header */
-	/*header {
+	header {
 	    width: 100%;
 	    background: #007bff;
-	    color: white;
-	    padding: 15px 25px;
 	    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	    background:#007bff;
+	    padding:5px;
+	    color: #fff;
+	    font-weight: bold;
+	    padding-left: 19px;
 	}
-	
-	header h1 {
-	    margin: 0;
-	    font-size: 1.8em;
-	} */
 
      #mocha-container {
 	   /* background: #fbf7bb; */
