@@ -181,7 +181,9 @@
     white-space: pre-wrap;
     overflow-x: hidden;   
     background: #f8f9fa;
-    height:100% !important
+    height:100% !important; 
+    padding-top: 22px;
+    padding-bottom: 22px;
 } 
 
 /* Opcional: Ajusta el ancho del editor */
