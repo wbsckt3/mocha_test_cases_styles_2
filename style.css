@@ -27,8 +27,7 @@
 	}
         #editor-container, #console-container {
             display: flex;
-            flex-direction: column;
-            border-right: 9px solid #a1a1a8
+            flex-direction: column;           
         }
         #code-editor {
             flex: 1;
